@@ -3,7 +3,7 @@
 set -e
 set -x
 
-./build-programs.sh
+./build-libraries.sh
 pushd sb_cli
 cargo run --release -- --wasm ../program_bins/sb_hello.wasm
 popd

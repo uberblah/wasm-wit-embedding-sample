@@ -54,7 +54,7 @@ impl ProgramImports for ShellboundState {
             "[write_stdout][t={}][pid={}]: {}",
             chrono::Local::now().format("%H:%M:%S%.3f"),
             self.process_id,
-            self.process_name,
+            String::from_utf8_lossy(&data)
         );
         Ok(data.len() as i32)
     }
