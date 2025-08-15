@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "sb_cli",
+    "sb_harness",
+    "programs/*"
+]
+resolver = "3"

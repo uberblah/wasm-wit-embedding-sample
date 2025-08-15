@@ -1,0 +1,10 @@
+package shellbound:sdk;
+
+world program {
+    /// Host callback for printing, receives the size of the buffer to print
+    import read-stdin: func(max-bytes: u32) -> list<u8>;
+    import write-stdout: func(data: list<u8>) -> s32;
+
+    /// Exported function: receives a string size, returns a string size
+    export process-run: func() -> u32;
+}

@@ -1,0 +1,9 @@
+[package]
+name = "sb_cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sb_harness = { path = "../sb_harness" }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"

@@ -1,0 +1,11 @@
+[package]
+name = "sb_harness"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wasmtime = "19.0.2"
+futures = "0.3.31"
+async-trait = "0.1.89"
+anyhow = "1.0.99"
+chrono = "0.4.41"
